@@ -1,0 +1,23 @@
+{
+  "name": "Михалыч AI",
+  "short_name": "Михалыч",
+  "description": "AI Sales Manager для Telegram от LAB301",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060C18",
+  "theme_color": "#060C18",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

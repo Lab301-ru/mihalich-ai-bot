@@ -11,7 +11,34 @@
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
 <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
-<meta name="theme-color" content="#050608" />
+<meta name="theme-color" content="#060C18" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://mihalich-ai.ru/" />
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="site.webmanifest" />
+
+<!-- Open Graph -->
+<meta property="og:type"        content="website" />
+<meta property="og:url"         content="https://mihalich-ai.ru/" />
+<meta property="og:site_name"   content="Михалыч AI" />
+<meta property="og:locale"      content="ru_RU" />
+<meta property="og:title"       content="Михалыч — AI-ассистент для бизнеса" />
+<meta property="og:description" content="AI Sales Manager для Telegram. Квалифицирует лидов за 0.5 секунды, интегрирует с CRM, работает 24/7. Подключение от 90 000 ₽." />
+<meta property="og:image"       content="https://mihalich-ai.ru/ai_assistant_main.webp" />
+<meta property="og:image:width"  content="1024" />
+<meta property="og:image:height" content="1024" />
+<meta property="og:image:alt"    content="Михалыч — AI-ассистент" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Михалыч — AI-ассистент для бизнеса" />
+<meta name="twitter:description" content="AI Sales Manager для Telegram. Квалифицирует лидов за 0.5 секунды, работает 24/7." />
+<meta name="twitter:image"       content="https://mihalich-ai.ru/ai_assistant_main.webp" />
+
+<!-- Preload critical assets -->
+<link rel="preload" as="image" href="ai_assistant_main.webp" />
+<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -200,6 +227,7 @@
   /* chat demo */
   .chat {
     position: relative;
+    contain: layout;
     background: linear-gradient(180deg, #0E1116 0%, #0A0C11 100%);
     border: 1px solid var(--line-2);
     border-radius: 22px;
@@ -247,7 +275,8 @@
   .chat-actions span { padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; }
 
   .chat-body {
-    min-height: 360px;
+    height: 360px;
+    overflow: hidden;
     display: flex; flex-direction: column; gap: 12px;
     padding: 6px 4px 4px;
   }
@@ -1339,5 +1368,64 @@
 })();
 </script>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Михалыч AI",
+      "url": "https://mihalich-ai.ru/",
+      "description": "AI Sales Manager для Telegram. Квалифицирует лидов, интегрирует с CRM, работает 24/7.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Telegram",
+      "inLanguage": "ru",
+      "offers": {
+        "@type": "Offer",
+        "price": "90000",
+        "priceCurrency": "RUB",
+        "description": "Базовый тариф START — Telegram-бот с AI-ответами"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "LAB301",
+        "url": "https://lab301.ru"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "LAB301",
+      "url": "https://lab301.ru",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://t.me/Judgeopenclawbot",
+        "email": "lab.301@ya.ru"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Михалыч заменит моего менеджера по продажам?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Нет — он заменит первую линию. Михалыч принимает 100% входящих, квалифицирует и отсеивает «не наш клиент». Менеджер получает уже горячих лидов с полной карточкой." }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит содержание после внедрения?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Около 1 000 ₽ в месяц: $5 на сервер Render, $10 на Groq API, Notion и Calendly — бесплатно." }
+        },
+        {
+          "@type": "Question",
+          "name": "Как быстро запустим?",
+          "acceptedAnswer": { "@type": "Answer", "text": "START — 3–5 рабочих дней. PRO — 7–10 дней. CUSTOM — от 14 дней." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </body>
 </html>
