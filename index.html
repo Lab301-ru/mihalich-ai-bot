@@ -769,7 +769,7 @@
       <a href="#pricing">Тарифы</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="https://t.me/Judgeopenclawbot" class="nav-cta">$ start_bot →</a>
+    <a href="https://t.me/Judgeopenclawbot" class="nav-cta">$ start_agent →</a>
   </div>
 </nav>
 
@@ -877,7 +877,7 @@
     <div class="section-head">
       <div class="section-num">/02 — Решение</div>
       <h2>Михалыч делает то,<br/>что человек делать не успевает.</h2>
-      <p class="lead">Не «ещё один чатбот по скриптам». Полноценный AI-менеджер с памятью, характером и доступом к вашей CRM. Работает на llama-3.1, отвечает 0.5 секунды, помнит контекст на 20 сообщений назад.</p>
+      <p class="lead">Не «ещё один чат-агент по скриптам». Полноценный AI-менеджер с памятью, характером и доступом к вашей CRM. Работает на llama-3.1, отвечает 0.5 секунды, помнит контекст на 20 сообщений назад.</p>
     </div>
     <div class="solution-grid">
 
@@ -928,7 +928,7 @@
 
       <div class="solution">
         <div class="sol-num">04 · ГОВОРИТ ПО-ЧЕЛОВЕЧЕСКИ</div>
-        <h3>Не «здравствуйте, я бот».<br/>А «привет, давай разберёмся».</h3>
+        <h3>Не «здравствуйте, я агент».<br/>А «привет, давай разберёмся».</h3>
         <p>Личность настраивается под бренд через Soul.md — отдельный документ, где описан тон, лексика, юмор. Клиенты неделями не догадываются, что переписывались с AI.</p>
         <div class="badge-row">
           <span class="badge cyan">Soul.md tuning</span>
@@ -966,7 +966,7 @@
           <div class="step">
             <div class="step-num">STEP 01</div>
             <h3>Подключить.</h3>
-            <p>Создаём бота через @BotFather, получаем токен, разворачиваем на Render.com. Никаких серверов покупать не нужно.</p>
+            <p>Создаём агента через @BotFather, получаем токен, разворачиваем на Render.com. Никаких серверов покупать не нужно.</p>
             <div class="cmd"><span class="pr">$</span> deploy --target render <span class="ok">✓ live</span></div>
             <div class="time">≈ 30 минут</div>
           </div>
@@ -1087,7 +1087,7 @@
     <div class="section-head">
       <div class="section-num">/06 — Тарифы</div>
       <h2>Три пакета.<br/>Без скрытых платежей и подписок.</h2>
-      <p class="lead">Платите один раз за внедрение. Дальше Михалыч обходится в 1 000 ₽/мес на серверы и API. Это не SaaS — это ваш бот, в вашем GitHub, на вашем хостинге.</p>
+      <p class="lead">Платите один раз за внедрение. Дальше Михалыч обходится в 1 000 ₽/мес на серверы и API. Это не SaaS — это ваш агент, в вашем GitHub, на вашем хостинге.</p>
     </div>
 
     <div class="pricing-grid">
@@ -1097,7 +1097,7 @@
         <div class="tier-price"><span class="v">90<small style="font-size:0.5em;color:var(--text-mute)">k</small></span><span class="per">/ ₽ · один раз</span></div>
         <p class="tier-desc">Базовый Михалыч: меню, ответы, квалификация. Идеален для тестового запуска и небольшого потока заявок.</p>
         <ul class="tier-features">
-          <li>Telegram-бот с AI-ответами</li>
+          <li>Telegram-агент с AI-ответами</li>
           <li>5-шаговая квалификация лидов</li>
           <li>Уведомления владельцу</li>
           <li>Soul.md под ваш бренд</li>
@@ -1151,7 +1151,7 @@
     <div class="cta-wrap">
       <div class="inner">
         <span class="eyebrow">Готов начать работу прямо сейчас</span>
-        <h2>Михалыч — <span class="accent">не бот.</span><br/>Это ваш лучший сотрудник.</h2>
+        <h2>Михалыч — <span class="accent">не просто агент.</span><br/>Это ваш лучший сотрудник.</h2>
         <p class="lead">Не уходит в отпуск. Не просит повышения. Не теряет лидов в 3 часа ночи. Подключим за неделю, окупится за месяц.</p>
         <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
           <a class="btn btn-primary" href="https://t.me/Judgeopenclawbot">
@@ -1284,7 +1284,7 @@
   if (!body) return;
 
   const script = [
-    { type: 'in', text: 'Здравствуйте! У меня магазин кофе. Можно AI-бота, чтобы принимал заказы ночью?', delay: 0 },
+    { type: 'in', text: 'Здравствуйте! У меня магазин кофе. Можно AI-агента, чтобы принимал заказы ночью?', delay: 0 },
     { type: 'typing', dur: 900 },
     { type: 'out', text: 'Привет 👋 Конечно — это как раз моя профильная задача. Сейчас задам пару вопросов и подберу решение. Сколько заказов в день примерно?', delay: 60 },
     { type: 'in', text: '40–60 в день, в основном вечером и ночью', delay: 200 },
@@ -1321,7 +1321,7 @@
     el.innerHTML = `
       <div class="lc-title"><span>NEW LEAD · auto-saved</span><b>● Notion CRM</b></div>
       <div class="lc-row"><span>Имя</span><span>Кафе «Зерно»</span></div>
-      <div class="lc-row"><span>Услуга</span><span>AI-бот для заказов</span></div>
+      <div class="lc-row"><span>Услуга</span><span>AI-агент для заказов</span></div>
       <div class="lc-row"><span>Объём</span><span>~50 заказов/день</span></div>
       <div class="lc-row"><span>Бюджет</span><span>180 000 ₽</span></div>
       <div class="lc-score"><span>Lead Score</span><b>🔥 88 / HOT</b></div>`;
@@ -1400,7 +1400,7 @@
         "@type": "Offer",
         "price": "90000",
         "priceCurrency": "RUB",
-        "description": "Базовый тариф START — Telegram-бот с AI-ответами"
+        "description": "Базовый тариф START — Telegram-агент с AI-ответами"
       },
       "creator": {
         "@type": "Organization",
